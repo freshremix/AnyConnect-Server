@@ -68,7 +68,7 @@ Get_ip(){
 }
 Download_ocserv(){
     mkdir "ocserv" && cd "ocserv"
-    wget "http://sr5.mdiaload.com:182/d/zltwt3fibgkhmpnzlbh6xsugb6pieakoipxdgmn5xdjhdr7lhaooij2isgqkehww6gnjxl5f/ocserv-${ocserv_ver}.tar.xz"
+    wget "http://sr5.mdiaload.com:182/d/zlt4vufibgkhmpnzlbh6xsugb5puywrjcvptm3ct6647udty2wuwr26crybs5px56vq4xdfk/ocserv-${ocserv_ver}.tar.xz"
     [[ ! -s "ocserv-${ocserv_ver}.tar.xz" ]] && echo -e "${Error} ocserv source download failed!" && rm -rf "ocserv/" && rm -rf "ocserv-${ocserv_ver}.tar.xz" && exit 1
     tar -xJf ocserv-1.1.6.tar.xz && cd ocserv-1.1.6
     ./configure
